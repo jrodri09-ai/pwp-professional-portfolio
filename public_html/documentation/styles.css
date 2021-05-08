@@ -1,9 +1,9 @@
-/* Container holding the image and the text */
+/* Container holding the image and the text*/
 .container {
     position: relative;
     text-align: center;
     color: #ffffcc;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* Centered text */
@@ -13,3 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
+

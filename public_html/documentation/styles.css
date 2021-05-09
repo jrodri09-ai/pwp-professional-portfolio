@@ -1,5 +1,5 @@
 /* Container holding the image and the text*/
-.container {
+.container-fluid{
     position: relative;
     text-align: center;
     color: #ffffcc;
@@ -13,6 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 
 

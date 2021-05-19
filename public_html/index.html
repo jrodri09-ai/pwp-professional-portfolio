@@ -155,33 +155,44 @@
 </div>
 </section>
 
-<section id="contact">
+<section>
 <div class="container">
-<form class="bg-light">
+<form class="bg-light"action="http://localhost:4200/apis/" id="contact" method="post" novalidate>
     <h1>Contact Me</h1>
     <p>Professional inquiries are most welcome. Please leave your contact information an I will
         get back to you shortly. I look forward to helping you create your website!</p>
     <div class="form-group">
-        <label for="exampleFormControlInput1">Name</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
     </div>
     <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput2"
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email"
                placeholder="name@example.com">
     </div>
     <div class="form-group">
-        <label for="exampleFormControlInput1">Phone Number</label>
-        <input type="email" class="form-control" id="exampleFormControlInput3"
-               placeholder="number">
+        <label for="subject">Subject</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+            </div>
+            <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+        </div>
     </div>
     <div class="form-group">
-        <label for="exampleFormControlTextarea1">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" maxlength="2000" name="message"
+                  placeholder="Your Message (2000 characters max)" required
+                  rows="5"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <!-- Make sure to add site key provided by google recaptcha -->
+    <div class="g-recaptcha" data-sitekey="6Lfy4dMaAAAAAHBXpRUg8LThN3Nk9AYJeBA7R9xk"></div>
+    <button class="btn btn-info" type="submit">Submit</button>
+    <button class="btn btn-default" type="reset">Reset</button>
 </form>
-</section>
+    <!-- END CONTACT FORM-->
+    <div id="output-area"></div>
+ </section>
+
 
   <footer class="footer">
       <div class="footer">
@@ -190,14 +201,8 @@
                  <li class="social-items"><a href="https://github.com/jrodri09-ai"><i class="fab fa-github"></i></a></li>
                  <li class="social-items"><a href="https://www.linkedin.com/in/jessica-rodriquez-594107169/"><i class="fab fa-linkedin-in"></i></a></li>
              </ul>
-
-
-
               <div>
-
-
-      </div>
-
+              </div>
   </footer>
 
 

@@ -1,5 +1,5 @@
 /* Container holding the image and the text*/
-.container-fluid {
+#intro {
     position: relative;
     text-align: center;
     color: #ffffcc;
@@ -14,11 +14,27 @@
     transform: translate(-50%, -50%);
 }
 
+#about-me {
+    background-color: #9e74d0;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#skills {
+    background-color:darkturquoise;
+    color:white;
+}
+#portfolio {
+    background-color:#9e74d0;
+    color: white;
+}
+
+
 
 .footer {
     margin: 0;
     padding: 10px;
-    background-color: gray;
+    background-color:#b19cd9;
 }
 
 .social-links {
